@@ -1,5 +1,5 @@
 # package
-BeautifulSoup 4
+[BeautifulSoup 4]
 pandas 
 requests
 lxml
