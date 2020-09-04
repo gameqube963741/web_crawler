@@ -1,9 +1,9 @@
 # package
-[BeautifulSoup 4]
-pandas 
-requests
-lxml
-numpy
+#### BeautifulSoup 4
+#### pandas 
+#### requests
+#### lxml
+#### numpy
 
 # CkipTagger
 #### GitHub
