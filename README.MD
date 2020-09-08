@@ -1,80 +1,36 @@
-# package
-#### BeautifulSoup 4
-#### pandas 
-#### requests
-#### lxml
-#### numpy
+# 各大論壇手機討論爬蟲
 
-# CkipTagger
-#### GitHub
+1. 巴哈姆特
+https://forum.gamer.com.tw/B.php?bsn=60559&subbsn=0
+2. Dcfever
+https://www.dcfever.com/phones/userreviews.php?page=1
+3. eprice
+https://www.eprice.com.tw/mobile/talk/0/0/1/
+4. mobile01
+https://www.mobile01.com/forumlist.php?f=16
+5. 批踢踢實業坊
+https://www.ptt.cc/bbs/MobileComm/index.html
 
-https://github.com/ckiplab/ckiptagger
+# packag
+1. beautifulsoup4==4.9.1
+2. certifi==2020.6.20
+3. chardet==3.0.4
+4. idna==2.10
+5. lxml==4.5.2
+6. numpy==1.19.1
+7. pandas==1.1.1
+8. python-dateutil==2.8.1
+9. pytz==2020.1
+10. requests==2.24.0
+11. six==1.15.0
+12. soupsieve==2.0.1
+13. urllib3==1.25.10
 
-[![GitHub release](https://img.shields.io/github/v/release/ckiplab/ckiptagger.svg?maxAge=3600)](https://github.com/ckiplab/ckiptagger/releases)
-[![GitHub release date](https://img.shields.io/github/release-date/ckiplab/ckiptagger.svg?maxAge=3600)](https://github.com/ckiplab/ckiptagger/releases)
-[![GitHub issues](https://img.shields.io/github/issues/ckiplab/ckiptagger.svg?maxAge=3600)](https://github.com/ckiplab/ckiptagger/issues)
+# CKIP NLP斷詞系統
+https://github.com/ckiplab/ckiptagger/wiki/Chinese-README
 
-#### PyPI
 
-https://pypi.org/project/ckiptagger
+# 爬蟲展示
+![](./demo_images/crawler.png.png)
 
-[![PyPI version](https://img.shields.io/pypi/v/ckiptagger.svg?maxAge=3600)](https://pypi.org/project/ckiptagger)
-[![PyPI license](https://img.shields.io/pypi/l/ckiptagger.svg?maxAge=3600)](https://github.com/ckiplab/ckiptagger/blob/master/LICENSE)
-[![PyPI python](https://img.shields.io/pypi/pyversions/ckiptagger.svg?maxAge=3600)](https://pypi.org/project/ckiptagger)
-
-#### Documentation
-
-https://github.com/ckiplab/ckiptagger/wiki
-
-#### Author / Maintainers
-
-[Peng-Hsuan Li](https://jacobvsdanniel.github.io)@[CKIP](http://ckip.iis.sinica.edu.tw) (author/maintainer)<br />
-[Wei-Yun Ma](https://www.iis.sinica.edu.tw/pages/ma)@[CKIP](http://ckip.iis.sinica.edu.tw) (maintainer)<br />
-
-## Introduction
-
-This open-source library implements neural CKIP-style Chinese NLP tools.
-* (WS) word segmentation
-* (POS) part-of-speech tagging
-* (NER) named entity recognition
-
-Related demo sites
-- [CkipTagger](http://ckip.iis.sinica.edu.tw/service/ckiptagger)
-- [CKIP CoreNLP](http://ckip.iis.sinica.edu.tw/service/corenlp)
-- [CKIPWS (classic)](http://ckipsvr.iis.sinica.edu.tw)
-
-Features
-- Performance improvements
-- Do not auto delete/change/add characters
-- Support indefinitely long sentences
-- Support user-defined recommended-word list and must-word list
-
-ASBC 4.0 Test Split (50,000 sentences)
-
-| Tool | (WS) prec | (WS) rec | (WS) f1 | (POS) acc |
-|:-:|:-:|:-:|:-:|:-:|
-| CkipTagger       | 97.49% | 97.17% | 97.33% | 94.59% |
-| CKIPWS (classic) | 95.85% | 95.96% | 95.91% | 90.62% |
-| Jieba-zh_TW      | 90.51% | 89.10% | 89.80% | -- |
-
-## Installation
-
-tl;dr.
-```
-pip install -U ckiptagger[tf,gdown]
-```
-
-CkipTagger is a Python library hosted on PyPI. Requirements:
-- python>=3.6
-- tensorflow>=1.13.1,<2 / tensorflow-gpu>=1.13.1,<2 (one of them)
-- gdown (optional, for downloading model files from google drive)
-
-(Minimum installation) If you have set up tensorflow, and would like to download model files by yourself.
-```
-pip install -U ckiptagger
-```
-
-(Complete installation) If you have just set up a clean virtual environment, and want everything, including GPU support.
-```
-pip install -U ckiptagger[tfgpu,gdown]
-```
+可以設定存為 json / csv

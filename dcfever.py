@@ -10,7 +10,6 @@ url = 'https://www.dcfever.com/phones/userreviews.php?page=1'
 user_agent= 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
 headers={'User-Agent': user_agent}
 
-
 x=0
 for p in range(200):
     res = requests.get(url=url, headers=headers)
@@ -80,7 +79,7 @@ for p in range(200):
 
 
         # save to json
-        with open(r'C:/Users/Big data/PycharmProjects/project/dcfever/dcfever_userreviews_%s.json' % x, 'w', encoding='utf-8') as json_file:
+        with open(r'./dcf/dcfever_userreviews_%s.json' % x, 'w', encoding='utf-8') as json_file:
             json.dump(dic, json_file)
         #time.sleep(3)
 

@@ -29,7 +29,6 @@ soup = BeautifulSoup(res.text, 'html.parser')
 each_article = soup.select("div[class='b-list__tile']")
 
 Joblist = pd.DataFrame()
-
 count = 1
 x=0
 while True:

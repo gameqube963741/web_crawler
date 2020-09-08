@@ -109,7 +109,6 @@ def getonecategoryarticles(i):
         
         print(name,'已下載完成')
     
-    
     else:
         #我們在上面就已經把討論版第一頁的所有網址加到articles這個list裡面了
         #所以如果該版沒有兩頁以上，則直接開始爬取所有articles內的文章連結
