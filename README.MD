@@ -31,6 +31,6 @@ https://github.com/ckiplab/ckiptagger/wiki/Chinese-README
 
 
 # 爬蟲展示
-![](./demo_images/crawler.png.png)
+![](./demo_images/crawler.png)
 
 可以設定存為 json / csv
